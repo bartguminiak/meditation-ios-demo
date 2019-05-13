@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/60c90a0d-6a0e-40ca-8fba-b4a7c17c96f3)](https://codebeat.co/projects/github-com-bartguminiak-meditation-ios-demo-master)
+
 # Meditation app, iOS demo
 
 > Based on [Dribbble shot by Ela Kumela](https://dribbble.com/shots/3853204-Meditation-app?utm_source=Clipboard_Shot&utm_campaign=kumela&utm_content=Meditation%20app&utm_medium=Social_Share), implemented by [Bartłomiej Guminiak](https://github.com/bartguminiak) for [El Passion](https://www.elpassion.com)
