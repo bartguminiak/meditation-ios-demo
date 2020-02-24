@@ -12,13 +12,11 @@
 
 Requirements: 
 
-- Xcode 10.1
-
-To set up the project, open terminal in MeditationAppShowcase folder and run `pod install`.
+- Xcode 10.1 +
 
 ## Run
 
-Open `MeditationAppShowcase.xcworkspace` and run production scheme in a chosen simulator. If you want to run the app on a real device, you need to update code signing configuration first.
+Open `MeditationAppShowcase.xcodeproj` and run production scheme in a chosen simulator. If you want to run the app on a real device, you need to update code signing configuration first.
 
 ## Some implementation details
 
