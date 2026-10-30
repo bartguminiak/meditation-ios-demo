@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,7 @@
 		067A6402221B1791001A20DF /* UILayoutGuide+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A6401221B1791001A20DF /* UILayoutGuide+Helpers.swift */; };
 		067A6404221B1D4C001A20DF /* SongInteractiveView+Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A6403221B1D4C001A20DF /* SongInteractiveView+Modes.swift */; };
 		067A6406221B1F1C001A20DF /* SongInteractiveView+Animating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A6405221B1F1C001A20DF /* SongInteractiveView+Animating.swift */; };
+		067A74563094CAE2007EE7B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A74553094CAE2007EE7B7 /* SceneDelegate.swift */; };
 		06959544221823DE009F966A /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06959543221823DE009F966A /* EventEmitter.swift */; };
 		06959546221823F6009F966A /* Invocable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06959545221823F6009F966A /* Invocable.swift */; };
 		0695954822182416009F966A /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0695954722182416009F966A /* Disposable.swift */; };
@@ -110,6 +111,8 @@
 		067A6401221B1791001A20DF /* UILayoutGuide+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutGuide+Helpers.swift"; sourceTree = "<group>"; };
 		067A6403221B1D4C001A20DF /* SongInteractiveView+Modes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SongInteractiveView+Modes.swift"; sourceTree = "<group>"; };
 		067A6405221B1F1C001A20DF /* SongInteractiveView+Animating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SongInteractiveView+Animating.swift"; sourceTree = "<group>"; };
+		067A74553094CAE2007EE7B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		067A74573094CB06007EE7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06959543221823DE009F966A /* EventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
 		06959545221823F6009F966A /* Invocable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invocable.swift; sourceTree = "<group>"; };
 		0695954722182416009F966A /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 				06A71A772201F2A1001DE399 /* MeditationAppShowcase */,
 				06A71A762201F2A1001DE399 /* Products */,
 				06A71A922201F946001DE399 /* Default-568h@2x.png */,
+				067A74553094CAE2007EE7B7 /* SceneDelegate.swift */,
+				067A74573094CB06007EE7B7 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -411,8 +416,9 @@
 		06A71A6D2201F2A1001DE399 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 2720;
 				ORGANIZATIONNAME = "Bartlomiej Guminiak";
 				TargetAttributes = {
 					06A71A742201F2A1001DE399 = {
@@ -511,6 +517,7 @@
 				062022C92212F8DE008DFECD /* Container+Meditation.swift in Sources */,
 				06325AAF221D1E1D00418954 /* TabBarViewController.swift in Sources */,
 				06B41EB22220276B00C7F935 /* MeditationScreenStateOperator.swift in Sources */,
+				067A74563094CAE2007EE7B7 /* SceneDelegate.swift in Sources */,
 				062FD7712208A5C900E237DA /* GradientView.swift in Sources */,
 				0604A603222491BF00D40DC2 /* SongInteractiveView+Height.swift in Sources */,
 				067A63F7221AE456001A20DF /* SongView+Selection.swift in Sources */,
@@ -563,6 +570,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -574,6 +582,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -593,6 +602,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -624,6 +634,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -635,6 +646,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -647,6 +659,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -660,7 +673,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/MeditationAppShowcase/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +693,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/MeditationAppShowcase/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

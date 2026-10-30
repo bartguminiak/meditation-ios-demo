@@ -16,7 +16,7 @@ extension AppConfigurator {
         animator.animate(duration: animated ? 0.25 : 0,
                          animations: {
                                 topConstraintOffset.constant = topOffset
-                                self.window.layoutIfNeeded()
+                                self.window?.layoutIfNeeded()
                          }
         )
     }

@@ -1,7 +1,8 @@
 import UIKit
 
 protocol AppConfiguring {
-    func configure()
+    func configure(in window: UIWindow)
+    func bringActionViewToFront()
 }
 
 class AppConfigurator: AppConfiguring, ActionViewControllerOperating {
@@ -13,12 +14,13 @@ class AppConfigurator: AppConfiguring, ActionViewControllerOperating {
          animator: Animating) {
         self.viewControllersFactory = viewControllersFactory
         self.animator = animator
-        self.window = UIWindow(frame: UIScreen.main.bounds)
     }
 
     // MARK: - AppConfiguring
 
-    func configure() {
+    func configure(in window: UIWindow) {
+        self.window = window
+
         let tabBarViewController = viewControllersFactory.tabBar([viewControllersFactory.home()])
         window.rootViewController = tabBarViewController
 
@@ -29,12 +31,15 @@ class AppConfigurator: AppConfiguring, ActionViewControllerOperating {
         actionViewController.view.pinCenterX(to: window.centerXAnchor)
         actionViewControllerTopConstraint = actionViewController.view.pinTop(to: window.safeAreaLayoutGuide.topAnchor)
 
-        window.makeKeyAndVisible()
-        window.bringSubviewToFront(actionViewController.view)
+    }
+
+    func bringActionViewToFront() {
+        guard let actionView = actionViewController?.view else { return }
+        window?.bringSubviewToFront(actionView)
     }
 
     var actionViewControllerTopConstraint: NSLayoutConstraint?
     var actionViewController: UIViewController?
-    let window: UIWindow
+    var window: UIWindow?
 
 }
